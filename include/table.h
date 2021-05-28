@@ -63,8 +63,10 @@ public:
 	{
 		int i = find_key(k);
 		if (i == -1) throw "Nothing found";
-		key.erase(key.begin() + i);
-		data.erase(data.begin() + i);
+		key[i] = key[size - 1];
+		data[i] = data[size - 1];
+		key.pop_back();
+		data.pop_back();
 		size--;
 	}
 	T find(unsigned int k)
