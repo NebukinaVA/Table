@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <list>
+#include <ctime>
 
 template <class T> 
 class Table {
